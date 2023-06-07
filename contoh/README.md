@@ -9,3 +9,16 @@ docker build -t contoh .
 ```shell
 docker run contoh
 ```
+
+## Docker Compose
+
+Menjalankan semua service:
+
+```shell
+docker-compose up -d
+```
+
+Shutdown service:
+```shell
+docker-compose down
+```
