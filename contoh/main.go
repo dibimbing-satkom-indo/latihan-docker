@@ -10,7 +10,7 @@ import (
 
 func main() {
 	app := gin.Default()
-	dsn := "root:password@tcp(db:3306)/app?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:password@tcp(db:3306)/app?parseTime=True"
 	db, err := gorm.Open(
 		mysql.Open(dsn),
 		&gorm.Config{},
